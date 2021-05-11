@@ -34,8 +34,6 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: passwd
-      MYSQL_USER: user
-      MYSQL_USER_PASSWORD: passwd
       MYSQL_DATABASE: default_db
     volumes:
       - ./sql:/var/lib/mysql
